@@ -22,6 +22,7 @@
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-plugin-transform-object-assign": "^6.22.0",
     "babel-preset-env": "^1.7.0",
+    "cross-env": "^5.2.0",
     "cssnano": "^3.10.0",
     "cypress": "^2.1.0",
     "eslint": "^4.19.1",
@@ -43,11 +44,11 @@
     "lodash.throttle": "^4.1.1"
   },
   "scripts": {
-    "build": "NODE_ENV=production rollup -c",
-    "watch": "NODE_ENV=dev rollup -c -w",
+    "build": "cross-env NODE_ENV=production rollup -c",
+    "watch": "cross-env NODE_ENV=dev rollup -c -w",
     "serve": "node ./scripts/start-server.js",
     "dev": "npm-run-all --parallel serve watch",
-    "test": "yarn lint && NODE_ENV=test node ./scripts/run-cypress-tests.js",
+    "test": "yarn lint && cross-env NODE_ENV=test node ./scripts/run-cypress-tests.js",
     "test:dev": "cypress open",
     "lint": "eslint src cypress demo scripts",
     "prepare": "npm run build"

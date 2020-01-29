@@ -29,6 +29,7 @@ bower_components
 node_modules
 
 # Dev files to ignore
-dist
+!dist
 cypress/screenshots
 cypress/videos
+package-lock.json
