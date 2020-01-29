@@ -10,10 +10,10 @@
   "browser": "dist/aos.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/michalsnik/aos.git"
+    "url": "https://github.com/vis97c/aos.git"
   },
   "bugs": {
-    "url": "https://github.com/michalsnik/aos/issues"
+    "url": "https://github.com/vis97c/aos/issues"
   },
   "devDependencies": {
     "autoprefixer": "^8.4.1",
